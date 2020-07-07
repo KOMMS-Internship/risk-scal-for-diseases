@@ -4,7 +4,7 @@ Goal: Creation of a scala to show how dangerous different disease
 
 To Do:
 
-* [ ] Specifying API to the main Simulation
+* [x] Specifying API to the main Simulation
 
         We would like to have all input informations
         mainly as floats
