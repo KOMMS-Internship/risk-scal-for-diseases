@@ -4,6 +4,13 @@ Goal: Creation of a scala to show how dangerous different disease
 
 To Do:
 
+* [ ] Specifying API to the main Simulation
+
+        We would like to have all input informations
+        mainly as floats
+        
+        We will think about the output 
+
 * [ ] Finding indicator to compare multiple diseases
 
         "Gefährlichkeitsformel"
@@ -18,6 +25,28 @@ To Do:
         hier gehen Punkte wie Maßnahmen der Region ein
         Außerdem Daten wie R und  die Gesundheitssystem Grenze
         
+            Infektionsrate
+
+        Mortalitätsrate
+
+        Infektionsweg (mehrere Konstanten)
+
+        Änderungsraten der anderen Raten
+
+        (Symptomrate)
+
+        (Altersverteilung)
+
+
+        Simulationsschnittstellen:
+    
+        Einwohnerzahl: Integer
+    
+        Infektionszahlen
+
+
+        Steuerungsmöglichkeiten (Lockdown)
+         
 * [ ] Finding weights
 
 ## This points are just the first rare points they will be split into pieces
