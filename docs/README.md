@@ -54,5 +54,9 @@ To Do:
 # Attendance of this group
 
 6.7: 15:00 - 16:00: Kick Off Meeting
+
 7.7: 9:15 - 9:46 Erste Absprache (ohne Rasmus)
+
 7.7: 14:00 - 15:00 Sprechstunde und Erzeugung dieses Dokuments (Jonathan)
+
+7.7: 15:00 - 16:00 Programmierermeeting (ohne Paul)
