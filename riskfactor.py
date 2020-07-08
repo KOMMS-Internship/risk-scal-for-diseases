@@ -4,11 +4,11 @@ while True:
     A = float(input('gefährdeteste Altersstufe'))
     In = float(input('Inkubationszeit in Tagen(Durchschnitt)'))
     if A > 60:
-        A1 = 1
+        A1 = 0.3
     if A > 30 and A <= 60:
-        A1 = 2
+        A1 = 0.5
     if A <= 30:
-        A1 = 3
+        A1 = 1
 
     alpha = 0.4
     beta = 0.4
