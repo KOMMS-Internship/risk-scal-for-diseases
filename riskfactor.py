@@ -3,7 +3,7 @@ while True:
     I = float(input('Infektionswahrscheinlichkeit beim x Minuten in einem x großen Raum mit einer infizierten Person aufhalten'))
     A = float(input('gefährdeteste Altersstufe'))
     In = float(input('Inkubationszeit in Tagen(Durchschnitt)'))
-    IA = float(input('Anstecken in Inkubationszeit? nicht anstecken = 0 Ansteckend = 1'))
+    IA = float(input('Anstecken in Inkubationszeit? nicht anstecken = 0.1 Ansteckend = 1'))
     if A > 60:
         A1 = 0.3
     if A > 30 and A <= 60:
