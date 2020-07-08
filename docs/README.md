@@ -25,17 +25,19 @@ To Do:
         hier gehen Punkte wie Maßnahmen der Region ein
         Außerdem Daten wie R und  die Gesundheitssystem Grenze
         
-            Infektionsrate
+            Infektionsrate (Wie wahrscheinlich werden Leute die eine betimmte Zeit mit mir in einem bestimmten Raum verbringen infiziert?)
 
-        Mortalitätsrate
+        Mortalitätsrate (Wahrscheinlichkeit zu sterben)
+        
+        bleibende Schäden
 
-        Infektionsweg (mehrere Konstanten)
+        Infektionsweg (mehrere Konstanten) (unwichtig nur die Wahrscheinlichkeit tut was zur Sache)
 
         Änderungsraten der anderen Raten
 
-        (Symptomrate)
+        (Symptomrate) solange es keine bleibenden Schäden gibt irrelevant
 
-        (Altersverteilung)
+        (Altersverteilung) wenn ale Kinder sterben ist schlimmer als wennn nur ältere Leute betroffen sind
 
 
         Simulationsschnittstellen:
