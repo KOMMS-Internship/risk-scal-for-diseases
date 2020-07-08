@@ -3,6 +3,7 @@ while True:
     I = float(input('Infektionswahrscheinlichkeit beim x Minuten in einem x großen Raum mit einer infizierten Person aufhalten'))
     A = float(input('gefährdeteste Altersstufe'))
     In = float(input('Inkubationszeit in Tagen(Durchschnitt)'))
+    IA = float(input('Anstecken in Inkubationszeit? nicht anstecken = 0 Ansteckend = 1'))
     if A > 60:
         A1 = 0.3
     if A > 30 and A <= 60:
@@ -15,6 +16,6 @@ while True:
     delta = 0.1
     gamma = 0.1
 
-    riskscale = M*alpha + I*beta + A1*delta + In*gamma
+    riskscale = M*alpha + I*beta + A1*delta + In*gamma*IA
 
     print(riskscale)
