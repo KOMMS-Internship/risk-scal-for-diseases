@@ -1,26 +1,38 @@
-while True:
-    M = float(input('Mortalität als Dezimalzahl'))
-    I = float(input('Infektionswahrscheinlichkeit beim x Minuten in einem x großen Raum mit einer infizierten Person aufhalten'))
-    A = float(input('gefährdetste Altersstufe'))
-    In = float(input('Inkubationszeit in Tagen(Durchschnitt)'))
-    IA = float(input('Anstecken in Inkubationszeit? nicht anstecken = 0.1 Ansteckend = 1'))
-    if A > 60:
-        A1 = 0.3
-    if A > 30 and A <= 60:
-        A1 = 0.5
-    if A <= 30:
-        A1 = 1
+def calculate_infection_probability(meter, minutes, probability):
+    return meter/2*minutes/2*probability/2  # Todo
 
-    alpha = 0.4
-    beta = 0.4
-    delta = 0.1
-    gamma = 0.1
-
-    riskscale = M*alpha + I*beta + A1*delta + In*gamma*IA
-
-    print(riskscale)
-
+def risk_scale_disease(mortality: float, infection_probability: float, risk_group: int, inkubation: int,
+               infectious_inkubation: bool, alpha: float = 0.4, beta:float = 0.4, delta:float = 0.1,
+                       gamma:float = 0.1) -> float:
     """
+    :param mortality: as percentage
+    :param infection_probability: per x minutes in a x m big area with a infected person
+    :param risk_group: the age group with the highest mortality
+    :param inkubation: inkubation time in average
+    :param infectious_inkubation: Is a infected person infectious during the inkubation time
+    :param alpha: #Todo Rasmus
+    :param beta: #Todo Rasmus
+    :param gamma: #Todo Rasmus
+    :param delta: #Todo Rasmus
+    :return: the calculated dangerousness in our risk scale
+    """
+
+    if infectious_inkubation:
+        infectious_inkubation =  1
+    else:
+        infectious_inkubation = 0.1
+
+    if risk_group > 60:
+        risk_group = 0.3
+    elif 30 < risk_group <= 60:
+        risk_group = 0.5
+    elif risk_group <= 30:
+        risk_group = 1
+
+    return mortality*alpha + infection_probability*beta + risk_group*delta + inkubation*gamma*infectious_inkubation
+
+
+"""
     Kriterien zur Bewertung des Gesundheitssystems basierend auf den Kriterien der 
     Joint Commission on Accreditation of Healthcare Organizations (JCAHO):
     
@@ -41,12 +53,17 @@ while True:
     - BIP
     - Bevölkerungsdichte
     """
-    addSystem = bool(input("Systemscore berechnen?"))
-    if addSystem:
-        doctors_per_person = float(input("Ärzte pro Einwohner:"))
-        beds_per_person = float(input("Krankenhausbetten pro Einwohner:"))
-        bip = float(input("BIP:"))
-        population_density = float(input("Bevölkerungsdichte:"))
 
-        systemscore = (doctors_per_person * beds_per_person * bip)/population_density
-        print(population_density)
+def health_system_score(doctors_per_person: float, hospital_beds_per_person: float, bip_for_health: float,
+                        population_density: float, alpha_groß: float = 1, beta_groß: float = 1, gamma_groß: float = 1,
+                        epsilon: float = 1) -> float:
+
+    """
+    :param doctors_per_person:
+    :param hospital_beds_per_person:
+    :param bip_for_health: How much money of the bip is spended for health
+    :param population_density:
+    :return: healty system score
+    """
+
+    return (doctors_per_person * beds_per_person * bip_for_health)/population_density
