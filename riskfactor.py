@@ -50,17 +50,19 @@ def risk_scale_disease(mortality: float, infection_probability: float, risk_grou
     
     - Ärzte pro Einwohner
     - Krankenhausbetten pro Einwohner
+    - Säuglingssterblichkeit
     - BIP
     - Bevölkerungsdichte
     """
 
-def health_system_score(doctors_per_person: float, hospital_beds_per_person: float, bip_for_health: float,
+def health_system_score(doctors_per_person: float, hospital_beds_per_person: float, infant_mortality: float = 1, bip_for_health: float,
                         population_density: float, alpha_groß: float = 1, beta_groß: float = 1, gamma_groß: float = 1,
                         epsilon: float = 1) -> float:
 
     """
     :param doctors_per_person:
     :param hospital_beds_per_person:
+    :param infant_mortality
     :param bip_for_health: How much money of the bip is spended for health
     :param population_density:
     :return: healty system score
