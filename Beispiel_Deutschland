@@ -13,10 +13,12 @@ Joint Commission on Accreditation of Healthcare Organizations (JCAHO):
     
 Meine Vorschläge für konkrete Zahlen: 
     
-- Einwohner pro Arzt ("[...]belief sich im Jahr 2019 auf durchschnittlich 207 Einwohner je Arzt"(destatis.de)
-- Krankenhausbetten pro 100 000 Einwohner ("[...]Demnach kamen in Deutschland 33,9 Intensivbetten auf 100 000 Einwohnerinnen und Einwohner") (destatis.de)
-- Säuglingssterblichkeit/ Tote Säuglinge pro Jahr (2019, 2 485 tote Säuglinge pro Jahr)
-- Geld für das Gesundheitssystem pro Jahr pro Einwohner ("[...]2018 auf 390,6 Milliarden Euro, 4 712 Euro je Einwohnerin bzw. Einwohner") (destatis.de)
+- Ärzte pro 10.000 Einwohner (40 in 2013) (destatis.de)
+- Krankenhausbetten pro 10.000 Einwohner (83 in 2013) (destatis.de)
+- Geld für das Gesundheitssystem pro Jahr pro Einwohner ("[...]2018 auf 390,6 Milliarden Euro, 4.712 Euro je Einwohnerin bzw. Einwohner") (destatis.de)
 - Bevölkerungsdichte (" Im Jahr 2018 betrug die Bevölkerungsdichte in Deutschland 237 Einwohner je km².") (destats.de)
+- Säuglingssterblichkeit/Tote pro 10.000 Geburten (40 in 2013) (destatis.de)
 
-health_system_score(207, 33, 9, 4712, 237, 2485)
+health_system_score(40, 83, 47.12 , 237, 40)
+
+https://www-genesis.destatis.de/genesis/online?operation=previous&levelindex=1&step=1&titel=Ergebnis&levelid=1594996856443&acceptscookies=false#abreadcrumb
