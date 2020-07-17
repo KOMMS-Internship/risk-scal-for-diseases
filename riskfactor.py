@@ -34,30 +34,6 @@ def risk_scale_disease(mortality: float, infection_probability: float, risk_grou
            infectious_inkubation
 
 
-"""
-    Kriterien zur Bewertung des Gesundheitssystems basierend auf den Kriterien der 
-    Joint Commission on Accreditation of Healthcare Organizations (JCAHO):
-    
-    - Zugänglichkeit der Versorgung
-    - Angemessenheit der Versorgung
-    - Stetigkeit/Koordination der Versorgung
-    - Wirksamkeit unter Idealbedingungen (Efficacy of care)
-    - Wirksamkeit in der Versorgungspraxis (Effectiveness of care)
-    - Wirtschaftlichkeit der Versorgung (Efficiency of care)
-    - Patientenorientierung der Versorgung
-    - Sicherheit der Versorgungsumgebung
-    - Rechtzeitigkeit der Versorgung
-    
-    Meine Vorschläge für konkrete Zahlen: 
-    
-    - Ärzte pro Einwohner
-    - Krankenhausbetten pro Einwohner
-    - Säuglingssterblichkeit
-    - BIP
-    - Bevölkerungsdichte
-    """
-
-
 def health_system_score(doctors_per_person: float, hospital_beds_per_person: float, bip_for_health: float,
                         population_density: float, infant_mortality: float = 1) -> float:
     """
