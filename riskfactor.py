@@ -45,11 +45,5 @@ def health_system_score(doctors_per_person: float, hospital_beds_per_person: flo
     :param population_density:
     :return: healty system score
     """
-    
-    two_digit_multiplier = 1/10
-    three_digit_multiplier = 1/100
-    four digit_multiplier = 1/1000
-    five_digit_multiplier = 1/10000
-    six_digit_multiplier = 1/100000
 
     return (doctors_per_person * hospital_beds_per_person * bip_for_health) / (population_density * infant_mortality)
