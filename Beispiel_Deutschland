@@ -19,6 +19,10 @@ Meine Vorschläge für konkrete Zahlen:
 - Bevölkerungsdichte (" Im Jahr 2018 betrug die Bevölkerungsdichte in Deutschland 237 Einwohner je km².") (destats.de)
 - Säuglingssterblichkeit/Tote pro 10.000 Geburten (40 in 2013) (destatis.de)
 
-health_system_score(40, 83, 47.12 , 237, 40)
-
 https://www-genesis.destatis.de/genesis/online?operation=previous&levelindex=1&step=1&titel=Ergebnis&levelid=1594996856443&acceptscookies=false#abreadcrumb
+
+Berechnung des System-Scores für Deutschland:
+
+health_system_score(40, 83, 47.12 , 237, 40)
+>>16.5019409283
+
