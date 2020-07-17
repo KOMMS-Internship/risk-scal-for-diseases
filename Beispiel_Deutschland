@@ -26,3 +26,8 @@ Berechnung des System-Scores für Deutschland:
 health_system_score(40, 83, 47.12 , 237, 40)
 >>16.5019409283
 
+Berechnung des System-Scores für Argentinien:
+
+health_system_score(39, 49, 9.29, 16.26, 110)
+>>9.92574639383
+
