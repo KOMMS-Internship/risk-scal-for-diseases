@@ -1,5 +1,6 @@
+# Wie berech net man die Infektionswahrscheinlichkeit?
 def calculate_infection_probability(meter, minutes, probability):
-    return meter / 2 * minutes / 2 * probability / 2
+    return  ((minutes / 2) * (probability / 2)) / (meter / 2)
 
 
 def risk_scale_disease(mortality: float, infection_probability: float, risk_group: int, inkubation: int,
